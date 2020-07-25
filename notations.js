@@ -66,10 +66,6 @@ function init()
 	toBase = document.forms.userdata["to-base"]
 
 	result = document.getElementById("to-value")
-
-	fromValue.value = 10
-	fromBase.value = 2
-	toBase.value = 10
 }
 
 function calc(value, from, to)
