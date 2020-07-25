@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+	<header>
+		<meta charset="utf-8">
+		<meta name="description" content="HTML5">
+
+		<link rel="stylesheet" href="./main.css">
+		<title>Команды</title>
+
+		<script type="text/javascript" src="./program.js"></script>
+	</header>
+	
+	<body>
+		<form name="commands">
+			<input type="text" name="cmd1" placeholder="1 команда" onchange="update()">
+			<input type="text" name="cmd2" placeholder="2 команда" onchange="update()">
+			<input type="button" name="button" value="Добавить команду" onclick="addCmd()">
+		</form>
+		<form name="userdata">
+			<input type="text" name="initial-value" placeholder="Начальное значение" onchange="update()">
+			<input type="text" name="sequence" placeholder="Последовательность" oninput="update()">
+			<p id="result"></p>
+		</form>
+	</body>
+
+	<script type="text/javascript">
+		init()
+		update()
+	</script>
+</html>
