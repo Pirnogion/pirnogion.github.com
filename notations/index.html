@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+	<header>
+		<meta charset="utf-8">
+		<meta name="description" content="HTML5">
+
+		<link rel="stylesheet" href="./main.css">
+		<title>Системы счисления. Перевод чисел.</title>
+
+		<script type="text/javascript" src="../libs/utils.js"></script>
+		<script type="text/javascript" src="./program.js"></script>
+		<script type="text/javascript" src="../libs/debug.js"></script>
+	</header>
+	
+	<body>
+		<div id="digits"></div>
+		<form name="userdata">
+			<p>Перевод между системами счисления</p>
+			<input type="text" name="from-value" placeholder="Значение" oninput="update()">
+			<input type="text" name="from-base" placeholder="Из" oninput="update()">
+			<input type="text" name="to-base" placeholder="В" oninput="update()">
+			<p id="to-value"></p>
+		</form>
+	</body>
+
+	<script type="text/javascript">
+		init()
+		update()
+	</script>
+</html>
