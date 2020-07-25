@@ -1,0 +1,43 @@
+input[type=text]
+{
+	border: none;
+	background-color: #9600e0;
+  	color: white;
+  	font-weight: bold; 
+  	padding: 2pt 2pt 2pt 2pt;
+}
+
+input[type=text]::placeholder
+{
+	color: #ffffffAA;
+	font-weight: normal;
+}
+
+input[type=text]:focus
+{
+	outline: none;
+}
+
+input[name="new-digit"]::placeholder
+{
+	text-align: center;
+}
+
+#digit, input[name="new-digit"]
+{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 25px;
+	height: 25px;
+	background-color: #9600e0;
+  	color: white;
+  	font-weight: bold; 
+  	text-align: center;
+  	margin: 0px 2px 0px 2px;
+}
+
+#digit:hover
+{
+	color: #47E000;
+}
