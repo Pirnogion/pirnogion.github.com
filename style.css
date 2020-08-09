@@ -1,0 +1,14 @@
+h3
+{
+	text-align: center;
+}
+
+u
+{
+	background-color: lightgray;
+	text-decoration: none;
+	padding: 2pt;
+	padding-top: 0;
+	border: 1px gray solid;
+	border-radius: 5px;
+}

@@ -1,0 +1,113 @@
+#wrapper
+{
+	margin-right: auto;
+	margin-left: auto;
+	width: 960px;
+}
+
+header
+{
+	padding: 5px;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	background-color: #779307;
+}
+
+#logo
+{
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	border-radius: 16px;
+	background-size: contain;
+	background-image: url("https://avatars1.githubusercontent.com/u/3678689?s=460&u=fba09885dc17b881e6d661fa9f53cbb4f82190a9&v=4");
+	vertical-align: middle;
+}
+
+#pagename
+{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
+	margin-left: 16px;
+	padding: 0;
+	font-size: 16pt;
+	color: #F0FFFF;
+}
+
+#sidebar
+{
+	margin-right: 10px;
+	margin-left: 10px;
+	padding: 5px;
+	float: left;
+	background-color: #fe9c00;
+	width: 210px;
+}
+
+#sidebar ul, #sidebar p
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#sidebar > p
+{
+	color: #F5F5DC;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+#sidebar ul li a
+{
+	text-decoration: none;
+	color: black;
+}
+
+#sidebar ul li
+{
+	padding: 0;
+	margin: 0;
+}
+
+#sidebar ul li *
+{
+	display: block;
+	padding: 10px;
+	margin-bottom: 5px;
+	background-color: #feba00;
+}
+
+#sidebar ul li *:hover, #sidebar ul li p
+{
+	padding-bottom: 7px;
+	background-color: #fed000;
+	border-bottom: 3px #fee000 solid;
+}
+
+content
+{
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	float: right;
+	width: 700px;
+	background-color: #dedede;
+}
+
+footer
+{
+	margin-right: 10px;
+	margin-left: 10px;
+	padding: 0 5px 0 5px;
+	clear: both;
+}
+
+section
+{
+	background-color: lightgray;
+	padding: 5px;
+	margin: 5px;
+}

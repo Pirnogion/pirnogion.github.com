@@ -10,6 +10,18 @@ let ops = new Map()
 let initialValue, sequence
 let result
 
+function permutate(value, i)
+{
+	if (value[i] == "1")
+	{
+		permutate(value, i-1)
+	}
+
+	value[i] = (value[i] == "0") ? "1" : "0"
+	
+	return value
+}
+
 function parseCmd(value)
 {
 	let pattern = /(\w+)\s*([+\-*/])=\s*([\-]*\d+)/
@@ -68,4 +80,27 @@ function update()
 	}
 
 	result.innerHTML = number
+
+	result.innerHTML = ""
+	let value = "000"
+	for (let j = 0; j < 8; ++j)
+	{
+		number = Number(initialValue.value)
+		for (let i = 0; i < value.length; ++i)
+		{
+			let cmd = commands.get(value[value.length - 1 - i])
+
+			if (cmd)
+			{
+				number = cmd(number)
+			}
+		}
+
+		result.innerHTML += value
+		result.innerHTML += " -> "
+		result.innerHTML += number
+		result.innerHTML += "<br>"
+
+		value = permutate(value.split(""), 2).join("")
+	}
 }
