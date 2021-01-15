@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="UTF-8">
+<html lang="ru">
 	<head>
 		<title>Мои web-программы</title>
 
@@ -9,33 +9,27 @@
 
 		<link rel="stylesheet" type="text/css" href="./main.css">
 		<link rel="stylesheet" type="text/css" href="./style.css">
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="env.js"></script>
+		<script src="toc.js"></script>
 	</head>
 	<body>
 		<div id="wrapper">
 			<header>
 				<div id="logo"></div>
-				<p id="pagename">WEB-программы</p>
+				<p id="pagename"></p>
 			</header>
 			<div id="sidebar">
 				<p>Навигация</p>
-				<ul>
-					<li><a href="./index.html">Главная</a></li>
-					<li><p>WEB-программы</p></li>
-				</ul>
+				<ul></ul>
 			</div>
-			<content>
-				<section>
-					<h3>Системы счисления. Перевод чисел.</h3>
-					<p>Данная программа позволяет в интерактивном режиме производить перевод введеного вами числа из одной системы счисления в другую. Можно так же расширить набор допустимых цифр указанием нового обозначения для очередного числа.</p>
-					<p>Основная цель написания этой программки заключалась в ознакомлении с синтаксисом языка <u>javascript</u>.</p>
-					<p><a href="./notations/index.html">Системы счисления. Перевод чисел.</a></p>
-				</section>
-				<section>
-					<h3>Комнады</h3>
-					<p>Эта программа была написана просто-напросто при решении ЕГЭ-шевского демоварианта для исследования задач с командами. Ничего особенного. Зато при её написании я понял что такое регулярки в js(мощная штука однако, не то что инвалидные регулярки в lua).</p>
-					<p><a href="./commands/index.html">Комнады</a></p>
-				</section>
-			</content>
+			<section id="articles">
+				<article hidden></article>
+				<script>
+					loadContent("jsprograms");
+				</script>
+			</section>
 			<footer>
 				<p>Пока здесь пусто</p>
 			</footer>

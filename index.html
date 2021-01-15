@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="UTF-8">
+<html lang="ru">
 	<head>
 		<title>Небольшая персональная страничка</title>
 
@@ -9,27 +9,27 @@
 
 		<link rel="stylesheet" type="text/css" href="./main.css">
 		<link rel="stylesheet" type="text/css" href="./style.css">
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="env.js"></script>
+		<script src="toc.js"></script>
 	</head>
 	<body>
 		<div id="wrapper">
 			<header>
 				<div id="logo"></div>
-				<p id="pagename">Небольшая персональная страничка</p>
+				<p id="pagename"></p>
 			</header>
 			<div id="sidebar">
 				<p>Навигация</p>
-				<ul>
-					<li><p>Главная</p></li>
-					<li><a href="./jsprograms.html">WEB-программы</a></li>
-				</ul>
+				<ul></ul>
 			</div>
-			<content>
-				<section>
-					<h3>Мои учебные web-программы</h3>
-					<p>В попытках изучить что есть такое javascript я написал несколько программ, которые можно посмотреть ниже. На данный момент это больше всё же некие наброски с лютым говнокодом под капотом, так как мне не очень нарвится web из-за его запутанности.</p>
-					<p>Список этих програм вы можете посмотреть <a href="./jsprograms.html">здесь</a>.</p>
-				</section>
-			</content>
+			<section id="articles">
+				<article hidden></article>
+				<script>
+					loadContent("index");
+				</script>
+			</section>
 			<footer>
 				<p>Пока здесь пусто</p>
 			</footer>
